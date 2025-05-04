@@ -1,5 +1,3 @@
-// Zobacz gotowy projekt: https://websamuraj.pl/examples/js/projekt7/
-
 const gameSummary = {
  numbers: 0,
  wins: 0,
@@ -29,12 +27,12 @@ function handSelection() {
 //  console.log(e.currentTarget);
 // }
 
-// Funkcja określająca wybór komputera
+// Wybór komputera
 function aiChoice() {
  return hands[Math.floor(Math.random() * 3)].dataset.option;
 }
 
-// Funkcja zwracajająca informacje o wyniku gry
+// Informacje o wyniku gry
 function checkResult(player, ai) {
  // console.log(player, ai);
  if (player === ai) {
@@ -73,7 +71,7 @@ function endGame() {
  game.playerHand = "";
  game.aiHand = "";
 }
-//funkcja sterująca
+// Funkcja sterująca
 function startGame() {
  if (!game.playerHand) {
   return alert("wybierz dłoń!!!!");
